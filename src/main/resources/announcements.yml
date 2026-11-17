@@ -1,0 +1,9 @@
+# Thong bao tu dong xoay vong trong chat.
+announcements:
+  enabled: true
+  interval_seconds: 300
+  prefix: ":icon_info: <aqua><bold>THÔNG BÁO</bold> <dark_gray>» <gray>"
+  messages:
+    - "Mua <yellow>key</yellow> tại <white>/key</white> để mở rương huyền thoại."
+    - "Vào Discord của server bằng lệnh <white>/discord</white>."
+    - "Gõ <white>/menu</white> để mở menu chính."

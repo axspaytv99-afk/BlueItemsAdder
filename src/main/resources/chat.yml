@@ -1,0 +1,6 @@
+# Dinh dang chat co huy hieu rank. Mac dinh TAT vi co the danh nhau voi plugin/script chat khac
+# (vi du Skript locchat.sk). Bat len (enabled: true) neu chat cua ban chua co dinh dang.
+chat:
+  enabled: false
+  format: "%luckperms_prefix%<white>%player_name%<dark_gray> » "
+  message_color: gray

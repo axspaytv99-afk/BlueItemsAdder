@@ -1,0 +1,24 @@
+# Bang tab (giu Tab de xem danh sach nguoi choi).
+# Tat plugin TAB neu dang cai de khong danh nhau.
+# Dung duoc: MiniMessage (<red>, <gradient:..>), ma mau &c, emoji :ten:, PlaceholderAPI.
+# Placeholder co san: %player% %online% %max% %ping%
+tab:
+  enabled: true
+  interval_ticks: 40        # 40 tick = 2 giay
+
+  header:
+    - ":logo:"              # logo 3D cao ~29px, nen can 3 dong trong ben duoi
+    - ""
+    - ""
+    - ""
+    - "<white>%online% <yellow>MEMBER <white>%ping% <yellow>PING"
+    - ""
+
+  # Dinh dang ten tung nguoi trong bang tab: huy hieu rank + ten + hau to (vi du HT3/LT5)
+  # %luckperms_prefix% va %luckperms_suffix% lay tu LuckPerms qua PlaceholderAPI.
+  name_format: "%luckperms_prefix%%player_name%%luckperms_suffix%"
+
+  footer:
+    - ""
+    - ":icon_discord: <gray>[/discord]    :icon_info: <gray>[/menu]"
+    - ""

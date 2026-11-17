@@ -1,0 +1,44 @@
+# Emoji: go :ten: trong chat / ten item / menu / bang tab / sidebar la tu doi thanh ky hieu.
+# Co 2 cach viet:
+#   ten: "ky hieu"
+#   ten: { text: "\uE010", permission: "quyen.can.co", font: "namespace:ten_font" }
+#     - permission: chi nguoi co quyen nay moi dung duoc trong CHAT (de tranh gia mao rank)
+#     - font: chi dung khi glyph nam trong font rieng; glyph o font mac dinh thi bo trong
+#
+# Cac ky tu \uE000 - \uE0FF la glyph trong resource pack (BlueTequila-ResourcePack).
+# Admin co quyen blueitems.commands co the go :ten: ngay trong lenh, vi du:
+#   /lp group default meta setprefix 100 ":badge_member: "
+emojis:
+  heart: "❤"
+  star: "★"
+  check: "✔"
+  cross: "✖"
+  sword: "⚔"
+  sun: "☀"
+  bolt: "⚡"
+  skull: "☠"
+  music: "♪"
+
+  # --- glyph tu resource pack ---
+  smile: "\uE000"
+
+  badge_owner:  { text: "\uE010", permission: "blueitems.badge" }
+  badge_admin:  { text: "\uE011", permission: "blueitems.badge" }
+  badge_mod:    { text: "\uE012", permission: "blueitems.badge" }
+  badge_vip:    { text: "\uE013", permission: "blueitems.badge" }
+  badge_member: { text: "\uE014", permission: "blueitems.badge" }
+
+  # icon 9x9 dung o sidebar, tab, thong bao
+  icon_coin:    "\uE020"
+  icon_gem:     "\uE021"
+  icon_clock:   "\uE022"
+  icon_shard:   "\uE023"
+  icon_user:    "\uE024"
+  icon_sword:   "\uE025"
+  icon_key:     "\uE026"
+  icon_team:    "\uE027"
+  icon_discord: "\uE028"
+  icon_info:    "\uE029"
+
+  # logo 3D lon cho header bang tab (cao khoang 29px, can 3 dong trong ben duoi)
+  logo: { text: "\uE030", permission: "blueitems.badge" }

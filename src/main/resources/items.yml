@@ -1,0 +1,33 @@
+# Item custom. Dung: /bi give <nguoi choi> <id> [so luong]
+# Ten va lore ho tro MiniMessage (<red>, <gradient:...>) va ma mau &c, &l ...
+# Ten/lore co the dung emoji :ten:
+#
+# Cac khoa ho tro:
+#   material: vat lieu goc (DIAMOND_SWORD, PAPER, ...)
+#   name, lore, amount
+#   model: "namespace:ten"  -> item_model, tro toi assets/<namespace>/items/<ten>.json trong resource pack
+#   enchants: { sharpness: 5 }
+#   flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES, ...]
+#   unbreakable: true/false
+#   glow: true/false
+#   hide_tooltip: true/false
+items:
+  ruby_sword:
+    material: DIAMOND_SWORD
+    name: "<red><bold>Kiếm Ruby"
+    lore:
+      - "<gray>Thanh kiếm đỏ rực như hồng ngọc"
+      - "<yellow>:star: Vật phẩm đặc biệt"
+    model: "blueitems:ruby_sword"
+    unbreakable: true
+    glow: true
+    enchants:
+      sharpness: 5
+      unbreaking: 3
+    flags: [HIDE_UNBREAKABLE]
+
+  smile_badge:
+    material: PAPER
+    name: "<yellow>:smile: Huy hiệu mặt cười"
+    lore:
+      - "<gray>Chỉ để trang trí"

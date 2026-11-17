@@ -1,0 +1,61 @@
+# Menu GUI. Mo bang: /bi menu <id>  hoac lenh rieng neu dat open_command (can restart de lenh moi co hieu luc).
+#
+# Moi o (item) trong menu:
+#   slot: 11            hoac  slots: [0, 1, 2]
+#   item: ruby_sword    (dung item custom trong items.yml)  -- hoac tu khai bao material/name/lore/...
+#   actions / left_actions / right_actions: danh sach hanh dong
+#
+# Hanh dong:
+#   [player] lenh        nguoi choi tu go lenh
+#   [console] lenh       console chay lenh
+#   [message] noi dung   gui tin nhan cho nguoi choi
+#   [open] ten_menu      mo menu khac
+#   [close]              dong menu
+#   [sound] ten_am_thanh vi du entity.experience_orb.pickup
+#   [give] id [so luong] tang item custom
+#
+# Placeholder: %player% va moi placeholder cua PlaceholderAPI (neu da cai).
+menus:
+  main:
+    title: "<gold><bold>Menu chính</bold> <gray>- %player%"
+    rows: 3
+    open_command: "menu"
+    # permission: "ten.quyen.han"    # bo dau # neu muon gioi han
+    filler:
+      material: GRAY_STAINED_GLASS_PANE
+      hide_tooltip: true
+    items:
+      preview:
+        slot: 11
+        item: ruby_sword
+        actions:
+          - "[message] <gray>Đây là vũ khí custom. Admin dùng <white>/bi give</white> để nhận."
+          - "[sound] entity.experience_orb.pickup"
+      emojis:
+        slot: 13
+        material: PAPER
+        name: ":star: <yellow>Danh sách emoji"
+        lore:
+          - "<gray>Bấm để xem emoji dùng được"
+        actions:
+          - "[close]"
+          - "[player] bi emojis"
+      shop:
+        slot: 15
+        material: EMERALD
+        name: "<green>Mở menu phụ"
+        actions:
+          - "[open] second"
+  second:
+    title: "<aqua>Menu phụ"
+    rows: 3
+    filler:
+      material: BLACK_STAINED_GLASS_PANE
+      hide_tooltip: true
+    items:
+      back:
+        slot: 22
+        material: ARROW
+        name: "<red>Quay lại"
+        actions:
+          - "[open] main"

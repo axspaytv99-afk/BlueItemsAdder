@@ -1,0 +1,17 @@
+# Bang thong tin ben phai man hinh. Toi da 15 dong. Moi nguoi mot bang rieng.
+# Nguoi choi tu an/hien bang bang lenh /bi sidebar
+# Co the doi thanh logo: title: ":logo:" (logo cao ~29px, de cao hon dong chu nen can thu truoc)
+sidebar:
+  enabled: true
+  interval_ticks: 20        # 20 tick = 1 giay
+  title: "<aqua><bold>BLUE TEQUILA SMP"
+  lines:
+    - ":icon_user: <yellow>%player_name%"
+    - ":icon_coin: <white>MONEY: <green>%vault_eco_balance_formatted%"
+    - ":icon_gem: <white>XU: <green>%playerpoints_points%"
+    - ""
+    - "<gold>STATS"
+    - ":icon_sword: <white>K/D: <red>%statistic_player_kills% <gray>/ <red>%statistic_deaths%"
+    - ":icon_clock: <white>TIME: <yellow>%statistic_hours_played%h"
+    - ""
+    - "<aqua>nvnmc.asia:26237 <gray>(%ping%ms)"

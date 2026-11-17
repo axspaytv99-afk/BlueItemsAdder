@@ -1,0 +1,24 @@
+name: BlueItems
+version: 2.0.0
+main: vn.bluetequila.blueitems.BlueItems
+api-version: '1.21'
+description: Emoji, item custom, menu GUI, bang tab, sidebar cho BlueTequila SMP
+softdepend: [PlaceholderAPI]
+commands:
+  blueitems:
+    description: Lenh chinh cua BlueItems
+    aliases: [bi]
+    usage: /blueitems help
+permissions:
+  blueitems.admin:
+    description: Dung give, list, reload va mo menu cho nguoi khac
+    default: op
+  blueitems.emoji:
+    description: Dung emoji :ten: trong chat
+    default: true
+  blueitems.badge:
+    description: Dung emoji huy hieu rank va logo trong chat
+    default: op
+  blueitems.commands:
+    description: Tu doi :ten: thanh ky tu trong lenh go
+    default: op
